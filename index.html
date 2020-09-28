@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Infografía Digital</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" />
+        <style>
+            body {
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+            }
+            h1 {
+                font-family: "Bitter", serif;
+                font-weight: 600;
+                font-size: 2.5rem;
+            }
+            @media (min-width: 992px) {
+                h1{
+                    font-size:3.3rem;
+                }
+            }
+            h2 {
+                font-weight: 700;
+                font-size: 1rem;
+                color: #999;
+                text-transform: uppercase;
+            }
+            h6 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.8rem;
+                color: #0f4c81;
+            }
+            h6 span {
+                font-weight: 300;
+                color: #999;
+            }
+            p.lead {
+                font-family: "Bitter", serif;
+                font-weight: 500;
+                color: #888;
+            }
+            @media (max-width: 992px) {
+                p.lead {
+                    text-align: center;
+                }
+            }
+            /* la siguiente clase se quita (removeClass) o agrega (addClass) con jQuery */
+            .esconder {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-10 col-md-8 col-lg-7">
+                    <h2 class="text-center pt-3">La huelga general feminista 8 y 9 de marzo 2020</h2>
+                    <h1 class="text-center py-3">Asistieron más de 2 millones a la marcha #8M</h1>
+                    <h6 class="text-center py-3">POR NOMBRE APELLIDO <span class="ml-3 d-none d-lg-inline">Lunes 28 de septiembre, 2020</span></h6>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <p class="lead">La multitudinaria movilización comenzó cerca de las 10 de la mañana en Plaza Italia, desarrollándose sin grandes desmanes y con algunos incidentes aislados en las inmediaciones de La Moneda. Organizaciones convocantes y la institución policial discrepan en la cantidad de manifestantes.</p>
+                </div>
+                <div class="col-12 my-3">
+                    <figure class="alert-primary shadow-sm">
+                        <svg x="0px" y="0px" viewBox="0 0 500 200" class="d-none d-md-block">
+                          <image style="overflow: hidden; enable-background: new;" width="1920" height="926" xlink:href="img/recorrido.png"transform="matrix(0.5 0 0 0.5 0 -26)"></image>
+                            <text x="250" y="100" text-anchor="middle" font-size="20">DESDE MD</text>
+                            <g id="primerGrupoGrande" class="esconder">
+                                <text x="250" y="120" text-anchor="middle" font-size="10">yo estoy en el primerGrupoGrande</text>
+                            </g>
+                            <g id="segundoGrupoGrande" class="esconder">
+                                <text x="250" y="120" text-anchor="middle" fill="#0F4C81" font-size="10">yo estoy en el segundoGrupoGrande</text>
+                            </g>
+                        </svg>
+
+                        <svg x="0px" y="0px" viewBox="0 0 500 500" class="d-md-none">
+                          <image style="overflow: hidden; enable-background: new;" width="850" height="1415" xlink:href="img/recorrido2.jpg" transform="matrix(0.5589 0 0 0.5589 -4.792007e-02 6.608760e-02)"></image>
+                            <text x="250" y="250" text-anchor="middle" font-size="30">HASTA MD</text>
+                            <g id="primerGrupoChico" class="esconder">
+                                <text x="250" y="300" text-anchor="middle" font-size="20">yo estoy en el primerGrupoChico</text>
+                            </g>
+                            <g id="segundoGrupoChico" class="esconder">
+                                <text x="250" y="300" text-anchor="middle" fill="#0F4C81" font-size="20">yo estoy en el segundoGrupoChico</text>
+                            </g>
+                        </svg>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <p>El recorrido se realizó de manera familiar entre los puntos del Parque Bustamante y el metro República, pasando por puntos emblemáticos como la Plaza de la Dignidad y la Moneda, con distintas intervenciones musicales y artísticas entre medio.
+Esta marcha fue convocada con el propósito de manifestar el descontento por la desigualdad de género y exigir el término de la violencia hacia la mujer. Este último punto se ha visto resaltado con la intervención de “Las Tesis”, ya conocida alrededor del mundo.
+El movimiento se caracterizó por su gran convocatoria y carácter pacífico, dado que, a pesar de ciertos incidentes aislados, se desarrolló sin mayores complicaciones ni intervención de carabineros, a diferencia de otras marchas realizadas con anterioridad.
+Uno de los temas que más ha causado controversia ha sido la cantidad efectiva de asistentes, dado que la coordinadora afirma que se movilizaron alrededor de 2 millones de personas, mientras que carabineros estimó el número en los 150 mil.
+.</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                var total = $(window).height();
+                if (scroll >= total / 1.618) {
+                    $("#primerGrupoChico").addClass("esconder");
+                    $("#primerGrupoGrande").addClass("esconder");
+                    $("#segundoGrupoChico").removeClass("esconder");
+                    $("#segundoGrupoGrande").removeClass("esconder");
+                } else {
+                    $("#primerGrupoChico").removeClass("esconder");
+                    $("#primerGrupoGrande").removeClass("esconder");
+                    $("#segundoGrupoChico").addClass("esconder");
+                    $("#segundoGrupoGrande").addClass("esconder");
+                }
+            });
+        </script>
+    </body>
+</html>
